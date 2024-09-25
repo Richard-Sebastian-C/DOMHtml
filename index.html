@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Adding JS as a seperate file </h1>
+    <input type = "text" id = "name">
+    <button id = "button" onclick="displayName()">Click Me</button>
+    <p id = "demo"></p>
+    <h1>Real time Validation using JS</h1>
+    <form id = "loginForm" onsubmit="validate(event)">
+        <fieldset>
+            <div>
+                <label>Email:</label>
+                <input type = "email" id = "email">
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type = "password" id = "password">
+            </div>
+            <div>
+                <label>Age:</label>
+                <input type = "text" id = "age" min="12" max ="50">
+            </div>
+            <button id = "button" type = "submit" >Submit</button>
+        </fieldset>
+    </form>
+    <h1 id = "one">Welcome</h1>
+    <p>This is the welcome Message</p>
+    <h2>Technology</h2>
+    <p>This is the Technology section</p>
+    <script>
+        var text = document.getElementById("one").innerHTML;
+        alert("The first heading is " + text);
+    </script>
+    <div id = "Message">
+        <script src = "app.js"></script>
+    </div>
+    <script src = "app.js" ></script>
+</body>
+</html>
